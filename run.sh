@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ $UID -eq 0 ]; then
+  /sbin/setuser nobody "$0" "$@"
+  exit
+fi
 
 SLEEP=${SLEEP:-"$SLEEP"}
 
