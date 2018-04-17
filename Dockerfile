@@ -10,8 +10,8 @@ ENV SYSTEMS="w100-x64"
 #ENV OFFICE="o2k16-x64"
 ENV OFFICE="" 
 ENV LANGUAGE="enu"
-#ENV PARAMS="-includesp -includecpp -includedotnet -includewddefs8"
-ENV PARAMS="-includesp -includecpp -includedotnet"
+ENV PARAMS="-includesp -includecpp -includedotnet -includewddefs8"
+#ENV PARAMS="-includesp -includecpp -includedotnet"
 ENV ISO="no"
 ENV SLEEP=48h
 
