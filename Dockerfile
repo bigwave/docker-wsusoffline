@@ -1,5 +1,5 @@
 FROM phusion/baseimage:latest
-MAINTAINER bigwave
+MAINTAINER R0GGER
 
 RUN apt-get update
 RUN apt-get install -y wget cabextract hashdeep xmlstarlet trash-cli unzip iputils-ping genisoimage
@@ -26,8 +26,8 @@ VOLUME ["/client"]
 
 ADD StaticDownloadLink-recent.txt /wsus/static/
 RUN cp /wsus/static/StaticDownloadLink-recent.txt /wsus/static/StaticDownloadLink-this.txt
-ADD wsusoffline1121.zip /wsus/
-RUN unzip -q /wsus/wsusoffline1121.zip -d /wsus/
+ADD wsusoffline114.zip /wsus/
+RUN unzip -q /wsus/wsusoffline114.zip -d /wsus/
 RUN find /wsus/ -name '*.bash' -print0 | xargs -0 chmod +x
 RUN find /wsus/ -name '*.sh' -print0 | xargs -0 chmod +x
 RUN find /wsus/ -name '*.exe' -print0 | xargs -0 chmod +x
